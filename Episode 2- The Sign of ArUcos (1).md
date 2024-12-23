@@ -127,7 +127,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 ```
 Next we create an instance of a class, which includes all the options that can be customized during the marker detection process:
 ```python
-parameters = aruco.DetectorParameters_create()
+parameters = cv2.aruco.DetectorParameters()
 ```
 And finally, we unpack parameters of the marker through:
 
