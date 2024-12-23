@@ -57,10 +57,11 @@ Type ```python3``` in Terminal to start Python interactive session and type foll
 import cv2 as cv
 print(cv.__version__)
 ```
-If you're encountering an issue with the cv2 (OpenCV) library and its interaction with the numpy library. then execute following 
+If you're encountering an issue with the cv2 (OpenCV) library and its interaction with the numpy library. then execute following
+We dont want the most recent version of numpy as it cannot interact with cv_bridge
 
 ```bash
-pip install --upgrade numpy
+pip install numpy==1.23.5
 ```
 
 If the results are printed out without any errors, congratulations !!! You have installed OpenCV-Python successfully.
